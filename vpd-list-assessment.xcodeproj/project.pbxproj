@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0D2909D12CA33971000A239C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0D2909D02CA33971000A239C /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0D2909B22CA32BCC000A239C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,16 +27,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0D2909D52CA33976000A239C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0D2909A12CA32BCA000A239C /* vpd-list-tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vpd-list-tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D2909B12CA32BCC000A239C /* vpd-list-tutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vpd-list-tutorialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D2909BB2CA32BCC000A239C /* vpd-list-tutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vpd-list-tutorialUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D2909A12CA32BCA000A239C /* vpd-list-assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vpd-list-assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D2909B12CA32BCC000A239C /* vpd-list-assessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vpd-list-assessmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D2909BB2CA32BCC000A239C /* vpd-list-assessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vpd-list-assessmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		0D2909A32CA32BCA000A239C /* vpd-list-tutorial */ = {
+		0D2909A32CA32BCA000A239C /* vpd-list-assessment */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "vpd-list-tutorial";
+			path = "vpd-list-assessment";
 			sourceTree = "<group>";
 		};
 		0D2909B42CA32BCC000A239C /* vpd-list-tutorialTests */ = {
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D2909D12CA33971000A239C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +93,10 @@
 		0D2909982CA32BCA000A239C = {
 			isa = PBXGroup;
 			children = (
-				0D2909A32CA32BCA000A239C /* vpd-list-tutorial */,
+				0D2909A32CA32BCA000A239C /* vpd-list-assessment */,
 				0D2909B42CA32BCC000A239C /* vpd-list-tutorialTests */,
 				0D2909BE2CA32BCC000A239C /* vpd-list-tutorialUITests */,
+				0D2909CF2CA33971000A239C /* Frameworks */,
 				0D2909A22CA32BCA000A239C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,41 +104,50 @@
 		0D2909A22CA32BCA000A239C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D2909A12CA32BCA000A239C /* vpd-list-tutorial.app */,
-				0D2909B12CA32BCC000A239C /* vpd-list-tutorialTests.xctest */,
-				0D2909BB2CA32BCC000A239C /* vpd-list-tutorialUITests.xctest */,
+				0D2909A12CA32BCA000A239C /* vpd-list-assessment.app */,
+				0D2909B12CA32BCC000A239C /* vpd-list-assessmentTests.xctest */,
+				0D2909BB2CA32BCC000A239C /* vpd-list-assessmentUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0D2909CF2CA33971000A239C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0D2909A02CA32BCA000A239C /* vpd-list-tutorial */ = {
+		0D2909A02CA32BCA000A239C /* vpd-list-assessment */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D2909C52CA32BCC000A239C /* Build configuration list for PBXNativeTarget "vpd-list-tutorial" */;
+			buildConfigurationList = 0D2909C52CA32BCC000A239C /* Build configuration list for PBXNativeTarget "vpd-list-assessment" */;
 			buildPhases = (
 				0D29099D2CA32BCA000A239C /* Sources */,
 				0D29099E2CA32BCA000A239C /* Frameworks */,
 				0D29099F2CA32BCA000A239C /* Resources */,
+				0D2909D52CA33976000A239C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				0D2909A32CA32BCA000A239C /* vpd-list-tutorial */,
+				0D2909A32CA32BCA000A239C /* vpd-list-assessment */,
 			);
-			name = "vpd-list-tutorial";
+			name = "vpd-list-assessment";
 			packageProductDependencies = (
+				0D2909D02CA33971000A239C /* Alamofire */,
 			);
 			productName = "vpd-list-tutorial";
-			productReference = 0D2909A12CA32BCA000A239C /* vpd-list-tutorial.app */;
+			productReference = 0D2909A12CA32BCA000A239C /* vpd-list-assessment.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0D2909B02CA32BCC000A239C /* vpd-list-tutorialTests */ = {
+		0D2909B02CA32BCC000A239C /* vpd-list-assessmentTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D2909C82CA32BCC000A239C /* Build configuration list for PBXNativeTarget "vpd-list-tutorialTests" */;
+			buildConfigurationList = 0D2909C82CA32BCC000A239C /* Build configuration list for PBXNativeTarget "vpd-list-assessmentTests" */;
 			buildPhases = (
 				0D2909AD2CA32BCC000A239C /* Sources */,
 				0D2909AE2CA32BCC000A239C /* Frameworks */,
@@ -133,16 +161,16 @@
 			fileSystemSynchronizedGroups = (
 				0D2909B42CA32BCC000A239C /* vpd-list-tutorialTests */,
 			);
-			name = "vpd-list-tutorialTests";
+			name = "vpd-list-assessmentTests";
 			packageProductDependencies = (
 			);
 			productName = "vpd-list-tutorialTests";
-			productReference = 0D2909B12CA32BCC000A239C /* vpd-list-tutorialTests.xctest */;
+			productReference = 0D2909B12CA32BCC000A239C /* vpd-list-assessmentTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0D2909BA2CA32BCC000A239C /* vpd-list-tutorialUITests */ = {
+		0D2909BA2CA32BCC000A239C /* vpd-list-assessmentUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D2909CB2CA32BCC000A239C /* Build configuration list for PBXNativeTarget "vpd-list-tutorialUITests" */;
+			buildConfigurationList = 0D2909CB2CA32BCC000A239C /* Build configuration list for PBXNativeTarget "vpd-list-assessmentUITests" */;
 			buildPhases = (
 				0D2909B72CA32BCC000A239C /* Sources */,
 				0D2909B82CA32BCC000A239C /* Frameworks */,
@@ -156,11 +184,11 @@
 			fileSystemSynchronizedGroups = (
 				0D2909BE2CA32BCC000A239C /* vpd-list-tutorialUITests */,
 			);
-			name = "vpd-list-tutorialUITests";
+			name = "vpd-list-assessmentUITests";
 			packageProductDependencies = (
 			);
 			productName = "vpd-list-tutorialUITests";
-			productReference = 0D2909BB2CA32BCC000A239C /* vpd-list-tutorialUITests.xctest */;
+			productReference = 0D2909BB2CA32BCC000A239C /* vpd-list-assessmentUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +214,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0D29099C2CA32BCA000A239C /* Build configuration list for PBXProject "vpd-list-tutorial" */;
+			buildConfigurationList = 0D29099C2CA32BCA000A239C /* Build configuration list for PBXProject "vpd-list-assessment" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -195,14 +223,17 @@
 			);
 			mainGroup = 0D2909982CA32BCA000A239C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0D2909CE2CA33944000A239C /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0D2909A22CA32BCA000A239C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0D2909A02CA32BCA000A239C /* vpd-list-tutorial */,
-				0D2909B02CA32BCC000A239C /* vpd-list-tutorialTests */,
-				0D2909BA2CA32BCC000A239C /* vpd-list-tutorialUITests */,
+				0D2909A02CA32BCA000A239C /* vpd-list-assessment */,
+				0D2909B02CA32BCC000A239C /* vpd-list-assessmentTests */,
+				0D2909BA2CA32BCC000A239C /* vpd-list-assessmentUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +289,12 @@
 /* Begin PBXTargetDependency section */
 		0D2909B32CA32BCC000A239C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0D2909A02CA32BCA000A239C /* vpd-list-tutorial */;
+			target = 0D2909A02CA32BCA000A239C /* vpd-list-assessment */;
 			targetProxy = 0D2909B22CA32BCC000A239C /* PBXContainerItemProxy */;
 		};
 		0D2909BD2CA32BCC000A239C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0D2909A02CA32BCA000A239C /* vpd-list-tutorial */;
+			target = 0D2909A02CA32BCA000A239C /* vpd-list-assessment */;
 			targetProxy = 0D2909BC2CA32BCC000A239C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -395,7 +426,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"vpd-list-tutorial/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"vpd-list-assessment/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -423,7 +454,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"vpd-list-tutorial/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"vpd-list-assessment/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -458,7 +489,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vpd-list-tutorial.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/vpd-list-tutorial";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vpd-list-assessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/vpd-list-assessment";
 			};
 			name = Debug;
 		};
@@ -476,7 +507,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vpd-list-tutorial.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/vpd-list-tutorial";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vpd-list-assessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/vpd-list-assessment";
 			};
 			name = Release;
 		};
@@ -515,7 +546,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0D29099C2CA32BCA000A239C /* Build configuration list for PBXProject "vpd-list-tutorial" */ = {
+		0D29099C2CA32BCA000A239C /* Build configuration list for PBXProject "vpd-list-assessment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D2909C32CA32BCC000A239C /* Debug */,
@@ -524,7 +555,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D2909C52CA32BCC000A239C /* Build configuration list for PBXNativeTarget "vpd-list-tutorial" */ = {
+		0D2909C52CA32BCC000A239C /* Build configuration list for PBXNativeTarget "vpd-list-assessment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D2909C62CA32BCC000A239C /* Debug */,
@@ -533,7 +564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D2909C82CA32BCC000A239C /* Build configuration list for PBXNativeTarget "vpd-list-tutorialTests" */ = {
+		0D2909C82CA32BCC000A239C /* Build configuration list for PBXNativeTarget "vpd-list-assessmentTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D2909C92CA32BCC000A239C /* Debug */,
@@ -542,7 +573,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D2909CB2CA32BCC000A239C /* Build configuration list for PBXNativeTarget "vpd-list-tutorialUITests" */ = {
+		0D2909CB2CA32BCC000A239C /* Build configuration list for PBXNativeTarget "vpd-list-assessmentUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D2909CC2CA32BCC000A239C /* Debug */,
@@ -552,6 +583,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0D2909CE2CA33944000A239C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0D2909D02CA33971000A239C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D2909CE2CA33944000A239C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0D2909992CA32BCA000A239C /* Project object */;
 }
