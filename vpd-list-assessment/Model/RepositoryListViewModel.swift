@@ -56,7 +56,7 @@ class RepositoryListViewModel: ObservableObject {
                             let repositories = try JSONDecoder().decode([Repository].self, from: data)
                             continuation.resume(returning: repositories)
                         } catch {
-                            // Log the error and print the response data for debugging
+            
                             print("Error decoding JSON: \(error)")
                             print("Response data: \(String(data: data, encoding: .utf8) ?? "N/A")")
                             continuation.resume(throwing: error)

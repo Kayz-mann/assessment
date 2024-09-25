@@ -13,7 +13,6 @@ struct RepositoryDetailView: View {
 
     var body: some View {
         ZStack {
-            // Image loader as the background for the whole screen
             ImageLoader(
                 url: URL(string: repository.owner.avatar_url ?? ""),
                 placeholder: Image(systemName: "person.fill"),
@@ -24,8 +23,7 @@ struct RepositoryDetailView: View {
             .edgesIgnoringSafeArea(.all)
         }
         .sheet(isPresented: $showSheet) {
-            BottomSheetView(repository: repository, showSheet: $showSheet) // Pass binding to showSheet
-                .presentationDetents([.medium])
+            BottomSheetView(repository: repository, showSheet: $showSheet)                .presentationDetents([.medium])
                 .presentationDragIndicator(.visible)
         }
         .navigationBarTitleDisplayMode(.inline)
@@ -39,7 +37,6 @@ struct RepositoryDetailView: View {
             UINavigationBar.appearance().scrollEdgeAppearance = appearance
             UINavigationBar.appearance().standardAppearance = appearance
             
-            // Present the sheet automatically
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 showSheet = true
             }
@@ -49,20 +46,18 @@ struct RepositoryDetailView: View {
 
 struct BottomSheetView: View {
     let repository: Repository
-    @Binding var showSheet: Bool // Binding to control sheet visibility
+    @Binding var showSheet: Bool
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            // Button to dismiss the sheet
             Button(action: {
-                showSheet = false // Dismiss the sheet
+                showSheet = false
             }) {
                 Text("Dismiss")
-                    .foregroundColor(.red) // Change color to indicate dismiss action
+                    .foregroundColor(.red)
                     .font(.headline)
                     .padding()
-                    .background(Color.clear) // Background transparent
-                    .cornerRadius(8)
+                    .background(Color.clear)                     .cornerRadius(8)
             }
 
             Text(repository.full_name)
@@ -89,11 +84,9 @@ struct BottomSheetView: View {
                 }
             }) {
                 Text("Open on GitHub")
-                    .foregroundColor(.white) // Text color is white
-                    .font(.headline)
-                    .padding() // Add padding for a better button appearance
-                    .background(Color.green.opacity(0.8)) // Light green background
-                    .cornerRadius(8) // Rounded corners for the button
+                    .foregroundColor(.white)                    .font(.headline)
+                    .padding()
+                    .background(Color.green.opacity(0.8))                     .cornerRadius(8)
             }
             
             Spacer()
@@ -113,8 +106,6 @@ struct RepositoryDetailView_Previews: PreviewProvider {
             stargazersCount: 100,
             forksCount: 50,
             owner: Repository.Owner(avatar_url: "https://avatars.githubusercontent.com/u/4?v=4", html_url: "https://github.com/wycats")
-//            html_url: "https://github.com/example/example-repo"
-            // Add this property to your Repository model
         )
         RepositoryDetailView(repository: repository)
     }
