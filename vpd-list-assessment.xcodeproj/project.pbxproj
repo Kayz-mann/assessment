@@ -52,14 +52,14 @@
 			path = "vpd-list-assessment";
 			sourceTree = "<group>";
 		};
-		0D2909B42CA32BCC000A239C /* vpd-list-tutorialTests */ = {
+		0D2909B42CA32BCC000A239C /* vpd-list-assessmentTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "vpd-list-tutorialTests";
+			path = "vpd-list-assessmentTests";
 			sourceTree = "<group>";
 		};
-		0D2909BE2CA32BCC000A239C /* vpd-list-tutorialUITests */ = {
+		0D2909BE2CA32BCC000A239C /* vpd-list-assessmentUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "vpd-list-tutorialUITests";
+			path = "vpd-list-assessmentUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -94,8 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				0D2909A32CA32BCA000A239C /* vpd-list-assessment */,
-				0D2909B42CA32BCC000A239C /* vpd-list-tutorialTests */,
-				0D2909BE2CA32BCC000A239C /* vpd-list-tutorialUITests */,
+				0D2909B42CA32BCC000A239C /* vpd-list-assessmentTests */,
+				0D2909BE2CA32BCC000A239C /* vpd-list-assessmentUITests */,
 				0D2909CF2CA33971000A239C /* Frameworks */,
 				0D2909A22CA32BCA000A239C /* Products */,
 			);
@@ -159,7 +159,7 @@
 				0D2909B32CA32BCC000A239C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				0D2909B42CA32BCC000A239C /* vpd-list-tutorialTests */,
+				0D2909B42CA32BCC000A239C /* vpd-list-assessmentTests */,
 			);
 			name = "vpd-list-assessmentTests";
 			packageProductDependencies = (
@@ -182,7 +182,7 @@
 				0D2909BD2CA32BCC000A239C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				0D2909BE2CA32BCC000A239C /* vpd-list-tutorialUITests */,
+				0D2909BE2CA32BCC000A239C /* vpd-list-assessmentUITests */,
 			);
 			name = "vpd-list-assessmentUITests";
 			packageProductDependencies = (
